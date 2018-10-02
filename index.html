@@ -11,40 +11,6 @@
   wechat = "MicroMessenger";
   alipay = "AlipayClient";
   userAgent = getUA();
-  if(userAgent .includes(wechat)){
-   //微信
-   window.location.href="static/wechat.png"
-  }else if(userAgent.includes(alipay)){
-   //支付宝
-   window.location.href=alipayURL;
-  }else{
-   //不是支付宝或微信中的一个
-   alert("无法识别的客户端！请在微信或支付宝内打开！");
-  }
-</script>
-  <div id="container">
-   <h1>详细信息:</h1>
-   <div id="ua"><p>UA:</p></div> 
-   <script>
-    document.getElementById("ua").innerHTML=("UA:"+navigator.userAgent);
-    document.getElementById("title").innerHTML="错误！";
-   </script>
-  </div>
- </body>
-</html>
-<html>
- <head>
-  <title id="title">转账跳转中......</title>
- </head>
- <body>
-  <script>
-  function getUA(){
-   return navigator.userAgent;
-  }
-  alipayURL="HTTPS://QR.ALIPAY.COM/FKX00576LNYX64NDCHUH7A";//从支付宝收款二维码里得到的URL
-  wechat = "MicroMessenger";
-  alipay = "AlipayClient";
-  userAgent = getUA();
   if(userAgent.indexOf(wechat)!=-1){
    //微信
    window.location.href="static/wechat.png"
