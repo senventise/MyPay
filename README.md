@@ -26,4 +26,4 @@ Sign up + Sign in
 ### 2.Fork
 点击页面右上角的 Fork 并等待其完成
 ### 3.配置
-同上
+[同上](https://github.com/senventise/MyPay#配置)
