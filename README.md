@@ -12,9 +12,13 @@
 **得到的链接是大写的，不要进行任何处理或转换成小写**  
 然后将 index.html 中的变量 alipayURL 改为自己的支付宝收款链接。
 ### 2.更换微信二维码
-保存微信收款二维码，放到 static/ 文件中，并命名为 wechat.png  
-### 3.添加 QQ 二维码(可选项)
-### 4.添加 TIM 二维码(可选项)
+保存微信收款二维码，放到 static/ 文件夹中，并命名为 wechat.png  
+### 3.添加 QQ 二维码(可选项)   
+将 QQ 收款二维码放到 static/ 文件夹中,并命名为 qq.png   
+将 index.html 中的 qqSwitch 改为 true(相应地,不使用的同学请将其改为 false)   
+### 4.添加 TIM 二维码(可选项)   
+将 TIM 收款二维码放到 static/ 文件夹中,并命名为 tim.png   
+将 index.html 中的 timSwitch 改为 true(相应地,不使用的同学请将其改为 false)   
 ### 3.设置为 Github Pages
 选择 Settings --> GitHub Pages 设置为 Github Pages  
 **如果没有通过 ICP 备案的域名建议不要使用自定义域名，会被微信拦截**  
@@ -28,4 +32,6 @@ Sign up + Sign in
 ### 2.Fork
 点击页面右上角的 Fork 并等待其完成
 ### 3.配置
-[同上](#配置)
+[同上](#配置)   
+
+ps.作为一名后端,写的很烂,请多多包涵(好多东西都是现学的...),欢迎 pr 或 issue.

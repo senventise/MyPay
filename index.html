@@ -16,12 +16,12 @@
   qqBrowser = "MQQBrowser"
   userAgent = getUA();
   //是否使用 QQ 或 TIM 收款开关
-  qqSwitch = false;
+  qqSwitch = true;
   timSwitch = true;
 
   if (userAgent.indexOf(wechat) != -1){
    //微信
-   window.location.href="static/wechat.png"
+   window.location.href="wechat.html"
   }else if (userAgent.indexOf(alipay) != -1){
    //支付宝
    //(还是支付宝最友好)
@@ -31,10 +31,10 @@
     //辣鸡tx,QQ和TIM收款码居然不通用?
     if (timSwitch && userAgent.indexOf("TIM") != -1){
       //TIM 
-      window.location.href="static/tim.png"
+      window.location.href="tim.html"
     }else if (qqSwitch){
       //QQ
-      window.location.href="static/qq.png"
+      window.location.href="qq.html"
     }
   }else{
    alert("无法识别的客户端！");
