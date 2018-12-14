@@ -5,53 +5,6 @@
   <title id="title">转账跳转中......</title>
  </head>
  <body>
-  <script>
-  function getUA(){
-   return navigator.userAgent;
-  }
-
-  alipayURL="HTTPS://QR.ALIPAY.COM/FKX00576LNYX64NDCHUH7A";
-  wechat = "MicroMessenger";
-  alipay = "AlipayClient";
-  qqBrowser = "MQQBrowser"
-  userAgent = getUA();
-  //是否使用 QQ 或 TIM 收款开关
-  qqSwitch = true;
-  timSwitch = true;
-
-  if (userAgent.indexOf(wechat) != -1){
-   //微信
-   window.location.href="wechat.html"
-  }else if (userAgent.indexOf(alipay) != -1){
-   //支付宝
-   //(还是支付宝最友好)
-   window.location.href=alipayURL;
-  }else if (userAgent.indexOf(qqBrowser) != -1){
-    //QQ或TIM
-    //辣鸡tx,QQ和TIM收款码居然不通用?
-    if (timSwitch && userAgent.indexOf("TIM") != -1){
-      //TIM 
-      window.location.href="tim.html"
-    }else if (qqSwitch){
-      //QQ
-      window.location.href="qq.html"
-    }
-  }else{
-   alert("无法识别的客户端！");
-  }
-</script>
-  <div id="container">
-   <h1>详细信息</h1>
-   <h3>如果遇到了问题，请将此页面截屏发送给开发者</h3>
-   <p>邮箱:senventise@gmail.com</p>
-   <div id="ua"><p>UA:</p></div> 
-   <duv id="link"><p>URL:</p></div>
-   <p>版本:2.2</p>
-   <script>
-    document.getElementById("link").innerHTML = ("URL:"+ window.location.href);
-    document.getElementById("ua").innerHTML = ("UA:" + navigator.userAgent);
-    document.getElementById("title").innerHTML = "错误！";
-   </script>
-  </div>
- </body>
+  <script src="main.js"></script>
+</body>
 </html>
