@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title id="title">转账跳转中......</title>
- </head>
- <body>
-    <div id="container">
-      <h1>详细信息</h1>
-      <h3>如果遇到了问题，请将此页面截屏发送给开发者</h3>
-      <p>邮箱:senventise@gmail.com</p>
-      <div id="ua"><p>UA:</p></div> 
-      <duv id="link"><p>URL:</p></div>
-      <p>版本:2.3</p>
-      <script>
-        document.getElementById("link").innerHTML = ("URL:"+ window.location.href);
-        document.getElementById("ua").innerHTML = ("UA:" + navigator.userAgent);
-        document.getElementById("title").innerHTML = "错误！";
-      </script>
-   </div>
- </body>
+    <head>
+        <meta charset="UTF-8">
+        <title id="title">转账跳转中......</title>
+    </head>
+    <body>
+        <div id="container">
+        <h1>详细信息</h1>
+        <h3>如果遇到了问题，请将此页面截屏发送给开发者</h3>
+        <p>邮箱:senventise@gmail.com</p>
+        <div id="ua"><p>UA:</p></div>
+        <duv id="link"><p>URL:</p></div>
+        <p>版本:2.3</p>
+        <script>
+            document.getElementById("link").innerHTML = ("URL:"+ window.location.href);
+            document.getElementById("ua").innerHTML = ("UA:" + navigator.userAgent);
+            document.getElementById("title").innerHTML = "出错了";
+        </script>
+        </div>
+    </body>
 </html>
