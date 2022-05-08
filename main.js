@@ -3,8 +3,8 @@ wechat="MicroMessenger";
 alipay="AlipayClient";
 qqBrowser="MQQBrowser";
 userAgent=navigator.userAgent;
-qqSwitch=true;
-timSwitch=true;
+qqSwitch=False;
+timSwitch=False;
 
 function inUA(s){
     return userAgent.indexOf(s)!=-1
